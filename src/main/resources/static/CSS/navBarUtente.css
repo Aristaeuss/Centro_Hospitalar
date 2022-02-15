@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Estilos do navegador lateral */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  padding-bottom:1rem;
+  position: fixed;
+  overflow-x: hidden;
+  font-size: 17px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  box-shadow: #a1a1a1 4px 0px 8px 4px;
+}
+
+.sidenav::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidenav::-webkit-scrollbar-track {
+  background: #00000029;
+}
+
+.sidenav::-webkit-scrollbar-thumb {
+  background: #98C33E;
+}
+.sidenav::-webkit-scrollbar-thumb:hover {
+  background: #98C33E75;
+}
+
+.sidenav .logo{
+  padding: 0%;
+  margin: 35px;
+  margin-bottom: 0px;
+}
+
+/* Estilos do ID do utilizador */
+.welcome {
+  margin-left: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.welcome-text {
+  font-size: smaller;
+  color: #7E7E7E;
+}
+
+.user {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.user_type {
+  font-size: smaller;
+  font-weight: lighter;
+}
+/* Final dos estilos do ID do utilizador */
+
+/* Estilos do menu do sidebar*/
+
+.sidenav a {
+  height: 30px;
+  text-decoration: none;
+  color: #7E7E7E;
+  display: block;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-left-style: solid;
+  border-left-width: 4px;
+  border-left-color:  transparent;
+}
+
+.button-image {
+  width: 10%;
+  margin-left: 30px;
+}
+
+.sidenav a e {
+  vertical-align: middle;
+  position: absolute;
+  margin-left: 5px;
+}
+
+.sidenav a f {
+  vertical-align: middle;
+  position: absolute;
+  margin-left: 5px;
+}
+
+.nav-title {
+  color: #ABABAB;
+  margin-bottom: 5%;
+  margin-left: 35px;
+}
+
+.nav-menu {
+  margin-top: 5%;
+}
+
+.sidenav .nav-menu .sub-menu {
+  margin-top: 15%;
+  margin-bottom: 40%;
+}
+
+.sidenav a:hover {
+  border-left-style: solid;
+  border-left-width: 4px;
+  border-left-color:  #98C33E;
+  color: #2C363E;
+
+}
+
+.sidenav .lower-part a:hover{
+  border-left-style: solid;
+  border-left-width: 4px;
+  border-left-color:  transparent;
+  color: #2C363E;
+}
+
+.navbar .lower-part {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.sidenav a:active {
+  color: #2C363E;
+}

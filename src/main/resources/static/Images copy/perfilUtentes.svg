@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-183 32.1 474.5 532.2" style="enable-background:new -183 32.1 474.5 532.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#XMLID_7_);}
+	.st1{fill:url(#XMLID_8_);}
+	.st2{fill:#98C33E;}
+	.st3{fill:url(#XMLID_9_);}
+</style>
+<g>
+	<defs>
+		<path id="XMLID_5_" d="M279.5,564.3H-171c-6.6,0-12-5.4-12-12V44.1c0-6.6,5.4-12,12-12h450.5c6.6,0,12,5.4,12,12v508.2
+			C291.5,558.9,286.1,564.3,279.5,564.3z"/>
+	</defs>
+	<clipPath id="XMLID_7_">
+		<use xlink:href="#XMLID_5_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st0">
+		
+			<linearGradient id="XMLID_8_" gradientUnits="userSpaceOnUse" x1="54.25" y1="565.36" x2="54.25" y2="33.16" gradientTransform="matrix(1 0 0 -1 0 597.44)">
+			<stop  offset="0" style="stop-color:#31ADE0"/>
+			<stop  offset="0.1185" style="stop-color:#37AED7"/>
+			<stop  offset="0.3117" style="stop-color:#46B2BF"/>
+			<stop  offset="0.5558" style="stop-color:#5FB797"/>
+			<stop  offset="0.8382" style="stop-color:#82BE60"/>
+			<stop  offset="1" style="stop-color:#98C33E"/>
+		</linearGradient>
+		<path id="XMLID_22_" class="st1" d="M279.5,564.3H-171c-6.6,0-12-5.4-12-12V44.1c0-6.6,5.4-12,12-12h450.5c6.6,0,12,5.4,12,12
+			v508.2C291.5,558.9,286.1,564.3,279.5,564.3z"/>
+		<g>
+			<ellipse id="XMLID_4_" class="st2" cx="52.7" cy="218.7" rx="75.4" ry="76.2"/>
+			<linearGradient id="XMLID_9_" gradientUnits="userSpaceOnUse" x1="54.25" y1="477.39" x2="54.25" y2="256.6896">
+				<stop  offset="0" style="stop-color:#31ADE0"/>
+				<stop  offset="0.1185" style="stop-color:#37AED7"/>
+				<stop  offset="0.2168" style="stop-color:#46B2BF"/>
+				<stop  offset="0.3047" style="stop-color:#5FB797"/>
+				<stop  offset="0.456" style="stop-color:#82BE60"/>
+				<stop  offset="1" style="stop-color:#98C33E"/>
+			</linearGradient>
+			<path id="XMLID_3_" class="st3" d="M194.5,477.3c0-104.7-33.5-220.6-140.1-220.6C-54,256.7-87.8,372.5-87.8,477.3h-9.6l303.3,0.1
+				C205.9,477.3,194.5,477.3,194.5,477.3z"/>
+		</g>
+		<g>
+			<ellipse id="XMLID_471_" class="st2" cx="178.8" cy="336.6" rx="75.4" ry="76.2"/>
+			<path id="XMLID_480_" class="st2" d="M320.6,564.1c0-104.7-56.5-189.6-140.1-189.6S38.3,459.4,38.3,564.1h-9.6l303.3,0.1
+				C332,564.2,320.6,564.1,320.6,564.1z"/>
+		</g>
+		<g>
+			<ellipse id="XMLID_2_" class="st2" cx="-69.2" cy="337.1" rx="75.4" ry="76.2"/>
+			<path id="XMLID_1_" class="st2" d="M72.6,564.7c0-104.7-56.5-189.6-140.1-189.6S-209.7,460-209.7,564.7h-9.6L84,564.8
+				C84,564.7,72.6,564.7,72.6,564.7z"/>
+		</g>
+	</g>
+</g>
+</svg>

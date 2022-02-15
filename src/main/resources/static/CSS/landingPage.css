@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container-fluid{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 8% 84% 8% ;
+}
+
+.header-side-left {
+    width: 100%;
+    height: 100%;
+    grid-column: 1;
+    grid-row: 1;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+}
+
+.header-side-right {
+    width: 100%;
+    height: 100%;
+    grid-column: 3;
+    grid-row: 1;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+}
+
+.headerBarFlex{
+    height: 100%;
+    padding-top: 0.5rem;
+    grid-column: 1/4;
+    grid-row: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content:space-between;
+    justify-content:space-around;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+}
+
+.headerLogo{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.headerBarFlex .medicos{
+    height: 80%;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.headerBarFlex .medicos button{
+    color:#7E7E7E;
+    background-color: rgb(255, 255, 255, 0);
+    border-color: rgb(255, 255, 255, 0);
+    transition: 0.5s;
+}
+
+.headerBarFlex .medicos button:hover{
+    color:#000000;
+    transition: 0.5s;
+}
+
+.headerBarFlex .areaUtente {
+    height: 80%;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.headerBarFlex .areaUtente button {
+    color:#7E7E7E;
+    background-color: rgb(255, 255, 255, 0);
+    border-color: rgb(255, 255, 255, 0);
+    transition: 0.5s;
+}
+
+.headerBarFlex .areaUtente button:hover{
+    color:#000000;
+    transition: 0.5s;
+}
+
+.headerBarFlex .areaUtente button img {
+       width: 1.5rem;
+}
+
+.headerBarFlex .medicos button img {
+       width: 1.5rem;
+}
+
+/* headerBar responsiveness */
+
+@media only screen and (max-width: 1000px) {
+    .headerBarFlex .areaUtente {
+        font-size: 0.8rem;
+        transition: 0.5s;
+    }
+
+    .headerBarFlex .medicos {
+        font-size: 0.8rem;
+        transition: 0.5s;
+    }
+
+    .headerBarFlex .areaUtente button img {
+        width: 1rem;
+        transition: 0.5s;
+    }
+
+    .headerBarFlex .medicos button img {
+        width: 1rem;
+        transition: 0.5s;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .headerBarFlex .areaUtente {
+        font-size: 0.6rem;
+        transition: 0.5s;
+    }
+
+    .headerBarFlex .medicos {
+        font-size: 0.6rem;
+        transition: 0.5s;
+    }
+    .headerBarFlex .areaUtente button img {
+        width: 0.8rem;
+        transition: 0.5s;
+    }
+
+    .headerBarFlex .medicos button img {
+        width: 0.8rem;
+        transition: 0.5s;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .headerBarFlex .areaUtente {
+        font-size: 0.4rem;
+        transition: 0.5s;
+    }
+
+    .headerBarFlex .medicos {
+        font-size: 0.4rem;
+        transition: 0.5s;
+    }
+
+    .headerBarFlex .areaUtente button img {
+        width: 0.6rem;
+        transition: 0.5s;
+    }
+
+    .headerBarFlex .medicos button img {
+        width: 0.6rem;
+        transition: 0.5s;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .headerBarFlex .areaUtente {
+        font-size: 0.3rem;
+        transition: 0.5s;
+    }
+
+    .headerBarFlex .medicos {
+        font-size: 0.3rem;
+        transition: 0.5s;
+    }
+
+    .headerBarFlex .areaUtente button img {
+        width: 0.4rem;
+        transition: 0.5s;
+    }
+
+    .headerBarFlex .medicos button img {
+        width: 0.4rem;
+        transition: 0.5s;
+    }
+}
+
+/* carousel */
+
+.carousel{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.footerBarFlex{
+    height: 100%;
+    padding-bottom: 0.5rem;
+    grid-column: 1/4;
+    grid-row: 3;
+    display: flex;
+    justify-content:space-between;
+    justify-content:space-around;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+}
+
+.footer-side-left {
+    width: 100%;
+    height: 100%;
+    grid-column: 1;
+    grid-row: 3;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+}
+
+.footer-side-right {
+    width: 100%;
+    height: 100%;
+    grid-column: 3;
+    grid-row: 3;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+}
+
+.footerBarFlex .upskill{
+   width: 50%;
+   height: 80%;
+   display: flex;
+   justify-content: center;
+   align-self: center;
+}
+
+.footerBarFlex .info{
+    height: 80%;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.footerBarFlex .info button{
+    color:#7E7E7E;
+    background-color: rgb(255, 255, 255, 0);
+    border-color: rgb(255, 255, 255, 0);
+    transition: 0.5s;
+}
+
+.footerBarFlex .info button:hover{
+    color:#000000;
+    transition: 0.5s;
+}
+
+.footerBarFlex .contactos{
+    height: 80%;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.footerBarFlex .contactos button{
+    color:#7E7E7E;
+    background-color: rgb(255, 255, 255, 0);
+    border-color: rgb(255, 255, 255, 0);
+    transition: 0.5s;
+}
+
+.footerBarFlex .contactos button:hover{
+    color:#000000;
+    transition: 0.5s;
+}
+
+/* footerBar responsiveness */
+
+@media only screen and (max-width: 1000px) {
+    .footerBarFlex .contactos {
+        font-size: 0.8rem;
+        transition: 0.5s;
+    }
+
+    .footerBarFlex .info {
+        font-size: 0.8rem;
+        transition: 0.5s;
+    }
+
+    .footerBarFlex .contactos button img {
+        width: 1rem;
+        transition: 0.5s;
+    }
+
+    .footerBarFlex .info button img {
+        width: 1rem;
+        transition: 0.5s;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .footerBarFlex .contactos {
+        font-size: 0.6rem;
+        transition: 0.5s;
+    }
+
+    .footerBarFlex .info {
+        font-size: 0.6rem;
+        transition: 0.5s;
+    }
+    .footerBarFlex .contactos button img {
+        width: 0.8rem;
+        transition: 0.5s;
+    }
+
+    .footerBarFlex .info button img {
+        width: 0.8rem;
+        transition: 0.5s;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .footerBarFlex .contactos {
+        font-size: 0.4rem;
+        transition: 0.5s;
+    }
+
+    .footerBarFlex .info {
+        font-size: 0.4rem;
+        transition: 0.5s;
+    }
+
+    .footerBarFlex .contactos button img {
+        width: 0.6rem;
+        transition: 0.5s;
+    }
+
+    .footerBarFlex .info button img {
+        width: 0.6rem;
+        transition: 0.5s;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footerBarFlex .contactos {
+        font-size: 0.3rem;
+        transition: 0.5s;
+    }
+
+    .footerBarFlex .info {
+        font-size: 0.3rem;
+        transition: 0.5s;
+    }
+
+    .footerBarFlex .contactos button img {
+        width: 0.4rem;
+        transition: 0.5s;
+    }
+
+    .footerBarFlex .info button img {
+        width: 0.4rem;
+        transition: 0.5s;
+    }
+}
+
+
+.popup {
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 100px;
+    width: 45%;
+    height: 650px;
+    padding: 2%;
+    color: #7E7E7E;
+    text-shadow:
+		-1px -1px 0 #f5f5f5,
+		1px -1px 0 #f5f5f5,
+		-1px 1px 0 #f5f5f5,
+		1px 1px 0 #f5f5f5;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255, 0.7);
+    z-index: 100;
+}
+
+.popup button {
+    position: absolute;
+    width: 24px;
+    margin-left: 88%;
+    font-size: 12px;
+    color:#7E7E7E;
+    background-color: rgb(0, 0, 0, 0.2);
+    border-color: rgb(255, 255, 255, 0);
+    border-radius: 12px;
+    transition: 0.5s;
+}
+
+.popup button:hover {
+    color:#000000;
+    background-color: rgb(0, 0, 0, 0.1);
+    transition: 0.5s;
+}    
+
+.flex-container-center {
+    display: flex;
+    flex-direction: column;
+}
+
+.about {
+    font-size: 12px;
+    vertical-align: text-bottom;
+    text-align: left;
+    margin-top: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+.partners {
+    margin-top: 60px;
+}
+
+.partners-logos {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-auto-rows: 50% 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner-logo img{
+    padding: 20px;
+    max-width: 100%;
+    object-fit:cover;
+}
+
+.popup1 {
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 100px;
+    width: 45%;
+    height: 650px;
+    padding: 2%;
+    color: #7E7E7E;
+    text-shadow:
+		-1px -1px 0 #f5f5f5,
+		1px -1px 0 #f5f5f5,
+		-1px 1px 0 #f5f5f5,
+		1px 1px 0 #f5f5f5;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255, 0.7);
+    z-index: 200;
+}
+
+.popup1 button.close-popup {
+    position: absolute;
+    width: 24px;
+    margin-left: 88%;
+    font-size: 12px;
+    color:#7E7E7E;
+    background-color: rgb(0, 0, 0, 0.2);
+    border-color: rgb(255, 255, 255, 0);
+    border-radius: 12px;
+    transition: 0.5s;
+}
+
+.popup1 button.close-popup:hover {
+    color:#000000;
+    background-color: rgb(0, 0, 0, 0.1);
+    transition: 0.5s;
+}  
+
+.popup1 a {
+    text-shadow: none;
+    color: #31ADE0;
+    transition: 0.5s;
+}
+
+.popup1 a:hover {
+    color: #98C33E;
+    transition: 0.5s;
+}
+
+.contact-wrapper {
+    display: grid;
+    height: 300px;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 34% 10% 10% 28% 10%;
+    grid-gap: 2%;
+}
+
+.contact-info {
+    font-size: 12px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.contact-form {
+    font-size: 12px;
+    text-align: left;
+    justify-content: top;
+    grid-column: 1 / 3;
+}
+
+.contact-name {
+    border-radius: 10px;
+    border-color: #f5f5f5;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.contact-email {
+    border-radius: 10px;
+    border-color: #f5f5f5;
+    font-size: 10px;
+    padding: 5px;
+    grid-column: 1 / 2;
+    grid-row: 3;
+    
+}
+
+.contact-phone {
+    border-radius: 10px;
+    border-color: #f5f5f5;
+    font-size: 10px;
+    padding: 5px;
+    grid-column: 2 / 3;
+    grid-row: 3;
+}
+
+.contact-message {
+    resize: none;
+    height: 100%;
+    border-radius: 10px;
+    border-color: #f5f5f5;
+    font-size: 10px;
+    color: #7E7E7E;
+    padding: 5px;
+    grid-column: 1 / 3;
+    grid-row: 4;
+}
+
+.popup1 ul {
+    margin-top: 20px;
+}
+
+.popup1 button.contact-submit-button {
+    width: 48px;
+    font-size: 12px;
+    color:#f5f5f5;
+    background-color: rgb(0, 0, 0, 0.2);
+    border-color: rgb(255, 255, 255, 0);
+    border-radius: 12px;
+    transition: 0.5s;
+    grid-column: 1 / 3;
+    grid-row: 5;
+}
+
+.popup1 button.contact-submit-button:hover {
+    color: #000000;
+    background-color: #98C33E;
+}
+
+.popup1 button.contact-submit-button:active {
+    color: #000000;
+    background-color: #31ADE0;
+}
+
+.hidden {
+    display: none;
+}

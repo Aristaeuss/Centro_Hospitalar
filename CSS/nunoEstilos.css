@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+    margin-top: 0%;
+    background-image: url('/Images/backgroundBlue.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-left: 0%;
+  }
+
+.register-grid{
+    display: grid;
+    grid-template-columns: 30% 550px 30%;
+    grid-template-rows: 5% auto 100px;
+}
+
+.register-flex{
+    
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-column-end: 3;
+    grid-row-end: 3;
+    background-color:  rgb(255, 255, 255);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.heartLogo{
+    display: flex;
+     flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    width: 35%;
+    align-self: center;
+    justify-self: center;
+}
+
+
+.field-input {
+    height: 30px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #DCDCDC;
+    margin: 5px;
+}
+
+.field-input:focus {
+    outline: none;
+    border-color: #31ADE0;
+    border-style: solid;
+}
+
+.field-input:hover {
+    outline: none;
+    border-color: #BCBCBC;
+    border-style: solid;
+    background-color: #FFFFFFB9;
+}
+
+
+.field-input::placeholder {
+    font-size: 16;
+    color: #7E7E7E;
+}
+
+.registerForm #fname, #lname{
+    width: 91.5%;
+}
+
+.register-flex #address{
+    width: 63%;
+}
+
+.register-flex #door{
+    width: 20%;
+}
+
+.register-flex #floor{
+    width: 15%;
+}
+.register-flex #postalCode{
+    width: 30%;
+}
+
+.register-flex #city{
+    width: 30%;
+}
+
+.register-flex #email{
+    width: 91.5%;
+}
+.register-flex #telephone{
+    width: 41.5%;
+}
+
+.register-flex #nif{
+    width: 41.5%;
+}
+
+.register-flex #socialSecurity{
+    width: 41.5%;
+}
+
+.register-flex #patientNumber{
+    width: 41.5%;
+}
+
+.register-flex #dob{
+    width: 57.5%;
+    color: #7E7E7E;
+}
+
+
+
+.register-flex #dob-label, .separator{
+    font-size: 16px;
+    color: #7E7E7E;
+    margin-left: 5px;
+}
+
+
+.register-flex #setPassword, #confirmPassword{
+    width: 91.5%;
+}
+
+.register-flex .tcText{
+    font-size: 11px;
+    color: #7E7E7E;
+    margin-left: 5px;
+    
+}
+.checkbox label {
+    display: inline-block;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+.checkbox input {
+    vertical-align: middle;
+}
+.checkbox label span {
+    vertical-align: middle;
+}
+
+
+.register-flex .submitButton{
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    background-image: linear-gradient(to bottom, #98C33E, #005716);
+    border: none;
+    border-radius: 20px;
+    width: 98%;
+    padding: 5px 50px 5px 50px;
+}
+
+.register-flex .haveAccount{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.register-flex .haveAccount a{
+    color: #31ADE0;
+}
+

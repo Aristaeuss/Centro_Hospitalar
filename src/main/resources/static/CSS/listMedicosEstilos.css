@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  margin-top: 0;
+  background-image: url('/Images/backgroundBlue.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Main */
+.main{
+  height: 800px;
+  padding-bottom: 0;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 8% 18% 70%;
+  grid-gap: 2%;
+}
+
+.headerBG {
+  width:100%;
+  height:100%
+  padding: 1rem;
+  grid-row: 1;
+  background-color: white;
+}
+
+.headerBar {
+  margin-top:0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content:space-between;
+}
+
+.voltar button{
+    margin-left:0.5rem;
+    color:#7E7E7E;
+    background-color: rgb(255, 255, 255, 0);
+    border-color: rgb(255, 255, 255, 0);
+    transition: 0.5s;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.voltar button:hover{
+    color:#000000;
+    transition: 0.5s;
+}
+
+.voltar button:active{
+    color:#7E7E7E;
+    transition: 0.5s;
+}
+
+form {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+form select{
+  font-size: 0.8rem;
+  color: #7E7E7E;
+  width: 12rem;
+  height: 2rem;
+  background-color: white;
+  border: solid #7E7E7E;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+.LogIn button{
+    margin-right:0.5rem;
+    color:#7E7E7E;
+    background-color: rgb(255, 255, 255, 0);
+    border-color: rgb(255, 255, 255, 0);
+    transition: 0.5s;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.LogIn button:hover{
+    color:#000000;
+    transition: 0.5s;
+}
+
+.LogIn button:active{
+    color:#7E7E7E;
+    transition: 0.5s;
+}
+
+.fixedText {
+  padding: 0.5rem;
+  grid-row: 2;
+  text-align: center;
+}
+
+.fixedText img {
+  width: 100%;
+  height: 4rem;
+}
+
+/*font size for the header title*/
+.fixedText h3{
+  margin-top: 1rem;
+  font-size: 28px;
+  font-weight: bolder;
+  color: #31ADE0;
+}
+
+/* lista de médicos */
+
+.doctor-cards-wrapper {
+  width: 96%;
+  height: 100%;
+  margin-right: 2%;
+  margin-left: 2%;
+  padding: 2rem;
+  grid-row: 3;
+  background-color: #31ADE050;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.doctor-card{
+  width: 18rem;
+  height: 30rem;
+  color: white;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.doctor-card-img {
+  width: 18rem;
+  height: 21rem;
+  padding: 0;
+  align-self: center;
+  border-radius: 10px;
+}
+
+.doctor-card-img img {
+  width: 18rem;
+  height: 21rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.doctor-name {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #31ADE0;
+}
+
+.doctor-speciality {
+  margin-top: -0.6rem;
+  font-size: 1rem;
+  color: #98C33E;
+  font-weight: bolder;
+}
+
+.doctor-about {
+  margin-top: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #7E7E7E;
+  font-size: 1rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.doctor-about::-webkit-scrollbar {
+  display: none;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 800px) {
+    .voltar button{
+      font-size: 1rem;
+    }
+    .doctor-name {
+      margin-top: 0;
+      font-size: 1rem;
+    }
+
+    .doctor-speciality {
+      font-size: 0.8rem;
+    } 
+    
+    .doctor-card {
+      width: 12rem;
+      height: 20rem;
+    }
+
+    .fixedText h3{
+      font-size: 18px;
+    }
+
+    .doctor-about {
+        font-size:0.8rem;
+    }
+}

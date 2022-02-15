@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 474.5 532.2" style="enable-background:new 0 0 474.5 532.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#XMLID_81_);}
+	.st1{fill:#98C33E;}
+</style>
+<g id="XMLID_475_">
+	<linearGradient id="XMLID_81_" gradientUnits="userSpaceOnUse" x1="237.2475" y1="-1.011267e-08" x2="237.2475" y2="532.1839">
+		<stop  offset="0" style="stop-color:#31ADE0"/>
+		<stop  offset="0.1185" style="stop-color:#37AED7"/>
+		<stop  offset="0.3117" style="stop-color:#46B2BF"/>
+		<stop  offset="0.5558" style="stop-color:#5FB797"/>
+		<stop  offset="0.8382" style="stop-color:#82BE60"/>
+		<stop  offset="1" style="stop-color:#98C33E"/>
+	</linearGradient>
+	<path id="XMLID_22_" class="st0" d="M462.5,532.2H12c-6.6,0-12-5.4-12-12V12C0,5.4,5.4,0,12,0h450.5c6.6,0,12,5.4,12,12v508.2
+		C474.5,526.8,469.1,532.2,462.5,532.2z"/>
+	<ellipse id="XMLID_471_" class="st1" cx="235.5" cy="201.9" rx="109.4" ry="110.6"/>
+	<path id="XMLID_480_" class="st1" d="M441.1,532c0-151.9-81.9-275-203.3-275S31.6,380.1,31.6,532c0,0-13.9,0-13.9,0l440,0.2
+		C457.7,532.1,441.1,532,441.1,532z"/>
+</g>
+</svg>

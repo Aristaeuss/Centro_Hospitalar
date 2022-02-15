@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  margin-top: 0%;
+  background-image: url('/Images/background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-left: 0%;
+  margin-bottom: 0%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Estilos do navegador lateral */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  padding-bottom:1rem;
+  position: fixed;
+  overflow-x: hidden;
+  font-size: 17px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  box-shadow: #a1a1a1 4px 0px 8px 4px;
+}
+
+.sidenav::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidenav .logo{
+  padding: 0%;
+  margin: 35px;
+  margin-bottom: 0px;
+}
+
+/* Estilos do ID do utilizador */
+.welcome {
+  margin-left: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.welcome-text {
+  font-size: smaller;
+  color: #7E7E7E;
+}
+
+.user {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.user_type {
+  font-size: smaller;
+  font-weight: lighter;
+}
+/* Final dos estilos do ID do utilizador */
+
+/* Estilos do menu do sidebar*/
+
+.sidenav a {
+  height: 30px;
+  text-decoration: none;
+  color: #7E7E7E;
+  display: block;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-left-style: solid;
+  border-left-width: 4px;
+  border-left-color:  transparent;
+}
+
+.button-image {
+  width: 10%;
+  margin-left: 30px;
+}
+
+.sidenav a e {
+  vertical-align: middle;
+  position: absolute;
+  margin-left: 5px;
+}
+
+.sidenav a f {
+  vertical-align: middle;
+  position: absolute;
+  margin-left: 5px;
+}
+
+.nav-title {
+  color: #ABABAB;
+  margin-bottom: 5%;
+  margin-left: 35px;
+}
+
+.nav-menu {
+  margin-top: 5%;
+}
+
+.sidenav .nav-menu .sub-menu {
+  margin-top: 15%;
+  margin-bottom: 40%;
+}
+
+.sidenav a:hover {
+  border-left-style: solid;
+  border-left-width: 4px;
+  border-left-color:  #98C33E;
+  color: #2C363E;
+
+}
+
+.sidenav .lower-part a:hover{
+  border-left-style: solid;
+  border-left-width: 4px;
+  border-left-color:  transparent;
+  color: #2C363E;
+}
+
+.navbar .lower-part {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.sidenav a:active {
+  color: #2C363E;
+}
+
+
+/* Final dos estilos do menu do sidebar */
+
+/* Final dos estilos do navegador lateral */
+
+/*definitions for the main body - gridSetup*/
+.main{
+  height:100%;
+  margin-top: 3%;
+  margin-left: 250px;
+  display: grid;
+  grid-template-columns: 10px 250px 250px 250px 250px 141px;
+  grid-template-rows: 100px 20px 50px 20px 100px 150px 50px 20px 250px;
+  column-gap: 2%;
+}
+
+/*size and placement of the 3 icons on the top*/
+figure .headerIcons{
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-column-end: 3;
+  grid-row-end: 3;
+  object-fit:cover;
+  margin-left: 35px;
+}
+
+.headerIcons{
+margin-left:2rem;
+}
+
+/*placement for the text on the top*/
+#headerText{
+  grid-column-start: 3;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+/*font size for the header title*/
+#headerTitle{
+  font-size: 20px;
+  color: #2C363E;
+}
+
+/*font size for the header text*/
+#headerSubText{
+  font-size: 16px;
+  color: #7E7E7E;
+}
+
+.pageIdentifier{
+  grid-column-start: 2;
+  grid-column-end:3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  color:#7E7E7E;
+  align-self: end;
+
+}
+
+/*transparent bar under cards settings*/
+.transparentCardBar{
+  grid-column-start: 2;
+  grid-column-end:9;
+  grid-row-start: 4;
+  grid-row-end: 9;
+  background-color: #ffffff63;
+  padding-top: 150px;
+
+}
+
+/*card class - each card div on HTML must set this has the first class*/
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: transparent;
+  border: transparent;
+}
+
+/*hover effect for the cards*/
+.card:hover{
+  padding:20px;
+  background-color: #FFFFFF;
+  border-bottom: 10px solid #98C33E;
+  border-bottom-width: 3px;
+  border-radius: 6px;
+  color: #98C33E;
+}
+
+
+/*settings for the images in side the cards - each picture for the card must use this class*/
+.cardImages{
+  width: 20%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.cardSubText{
+  color: #7E7E7E;
+}
+
+/*settings for the button inside the card - the button section in html must implement this class*/
+.buttonCard a{
+  margin-top: 5%;
+  margin-bottom: 2%;
+  border-style: solid ;
+  border-width: 1px;
+  border-color: #707070;
+  border-radius: 6px;
+  color: #2C363E;
+  display: inline-block;
+  padding: 5px 33px 5px 33px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.inputInfoCard{
+  border-radius: 6px;
+  border-color: #707070;
+  border-width: 1px;
+  background-color: transparent;
+}
+
+.submitButtonCard{
+  background-color: transparent;
+  border-color: transparent;
+  color: #2C363E;
+  font-size: 20px;
+  margin-top: 30px;
+
+}
+
+/*card1 placement inside the grid*/
+#card1{
+  grid-column-start: 2;
+  grid-column-end:3;
+  grid-row-start: 5;
+  grid-row-end: 8;
+}
+
+/*card2 placement inside the grid*/
+#card2{
+  grid-column-start: 3;
+  grid-column-end:4;
+  grid-row-start: 5;
+  grid-row-end: 8;
+}
+
+/*card3 placement inside the grid*/
+#card3{
+  grid-column-start: 4;
+  grid-column-end:5;
+  grid-row-start: 5;
+  grid-row-end: 8;
+}
+#card4{
+  grid-column-start: 5;
+  grid-column-end:6;
+  grid-row-start: 5;
+  grid-row-end: 8;
+}
+
+.scheduledAppointmentsDiv, .invoicesDiv{
+  grid-column-start: 2;
+  grid-column-end:9;
+  grid-row-start: 4;
+  grid-row-end: 9;
+  margin-top:1rem;
+  margin-left:1rem;
+  margin-bottom: 1rem;
+  overflow-y: scroll;
+}
+
+.scheduledAppointmentsDiv table, .invoicesDiv table{
+    width: 80vw;
+
+
+}
+
+.filterButtonsContainer {
+  grid-column-start: 3;
+  grid-column-end:6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display:flex;
+  flex-direction:row;
+}
+
+.filterButtonsContainer .linkContainer {
+    width: 33%;
+}
+
+.filterButtonsContainer a {
+  height: 30px;
+  text-decoration: none;
+  color: #7E7E7E;
+  display: block;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.filterButtonsContainer .button-image {
+  width: 10%;
+  margin-left: 30px;
+}
+
+.carousel{
+  grid-column-start: 3;
+  grid-column-end:7;
+  grid-row-start: 9;
+  grid-row-end: 10;
+
+}
+
+.carousel-control-prev {
+  margin-left: -70px;
+}
+
+.carousel-control-next{
+  margin-right: -70px;
+}
+
+.carousel-control-prev-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2331ADE0' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon{
+
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2331ADE0' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-item {
+  margin-top: 30px;
+  width: 100%;
+  height: 250px; /* example */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+}
+
+.submitButton{
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    background-image: linear-gradient(to bottom, #98C33E, #005716);
+    border: none;
+    border-radius: 20px;
+    width: 10rem;
+    padding: 5px 5px;
+}
+
+.submit-button-arrow-image {
+    position: absolute;
+    top: 0px;
+    left: 80%;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    }

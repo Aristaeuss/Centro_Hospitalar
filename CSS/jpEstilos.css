@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    height: 100%;
+    width: calc(10% + 100px);
+    background-color: #ffffff;
+    overflow-x: hidden;
+    box-shadow: 5px 0px 20px 0px #00000029;
+    list-style: none;
+}
+
+.navbar > .welcome-box {
+    white-space: nowrap;
+    padding-left: 10%;
+    min-height: 200px;
+}
+
+.navbar .logo-image {
+    margin: 10% 10% 10% 0%;
+}
+
+.navbar .greeting {
+    font: medium;
+    font-size: 17px;
+    color: #7E7E7E;
+}
+
+.navbar .user-name {
+    font: bold;
+    font-size: 29px;
+    color: #2C363E;
+}
+
+.navbar .user-type {
+    font: lighter;
+    font-size: 14px;
+    color: #7E7E7E
+}
+
+.navbar > .menu {
+    min-height: 500px;
+    height: calc(100% - (100px + 200px));
+}
+
+.navbar li {
+    border-left: transparent 5px solid;
+    padding: 10px 0px 10px 10%;
+}
+
+.navbar a {
+    white-space: nowrap;
+    padding: 5px 0px 5px 0px;
+    line-height: 32px;
+    display: inline-block;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #7E7E7E;
+}
+
+.navbar a:hover {
+    background-color: #f3f3f3;
+}
+
+.navbar a img {
+    float: left;
+    width: 32px;
+    height: 32px;
+}
+
+.navbar a > span {
+    padding-left: 5px;
+}
+
+.navbar > .menu > .selected {
+    border-left: #98C33E 5px solid;
+}
+
+.navbar > .menu > .selected * {
+    color: #2C363E;
+}
+
+.navbar > .menu .quick-access {
+    white-space: nowrap;
+    border-left: transparent 5px solid;
+    margin-top: 30px;
+    padding-left: 10%;
+    font: medium;
+    font-size: 17px;
+    color: #ABABAB;
+}
+
+.navbar .lower-part {
+    height: 100px
+}
+
+.main {
+    position: fixed;
+    top: 0px;
+    left: calc(10% + 100px);
+    z-index: 0;
+    height: 100%;
+    width: calc(90% - 100px);
+    background-image: url('../Images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

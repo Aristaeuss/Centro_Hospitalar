@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin-top: 0%;
+    background-image: url('/Images/backgroundBlue.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-left: 0%;
+}
+
+#main-div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    min-height: 750px;
+    min-width: 1250px;
+    display: grid;
+    grid-template-columns: 25% 10% 30% 10% 25%;
+    grid-template-rows: 20% 40% 40%;
+}
+
+#top-logo-image {
+    grid-column: 3;
+    grid-row: 1;
+    margin: 20%;
+    align-self: center;
+}
+
+#center-login-box {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 5%;
+    grid-column: 3;
+    grid-row: 2;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+#center-login-box::-webkit-scrollbar {
+    display: none;
+}
+
+#login-form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#login-form .fields-container {
+    width: 80%;
+    margin: auto;
+    align-self: center;
+    text-align: center;
+}
+
+#login-form .field-container {
+    margin-bottom: 5%;
+}
+
+#login-form #email-container {
+    margin-top: 10%;
+}
+
+#login-form .field-input {
+    width: 100%;
+    height: 50px;
+    padding: 10px 10px 10px 10px;
+    align-self: center;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #DCDCDC;
+}
+
+#login-form .field-input:focus {
+    outline: none;
+    border-color: #31ADE0;
+    border-style: solid;
+}
+
+#login-form .field-input::placeholder {
+    color: #DCDCDC;
+}
+
+#login-form .submit-button-container {
+    width: 80%;
+    height: 40px;
+    border-radius: 20px;
+    align-self: center;
+    margin: auto;
+    background-image: linear-gradient(to bottom, #98C33E, #005716);
+    border: none;
+    position: relative;
+}
+
+#login-form .submit-button-arrow-image {
+    position: absolute;
+    top: 0px;
+    left: 80%;
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+#login-form .submit-button {
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+#login-form .submit-button:focus {
+    outline: none;
+}
+
+#login-form .register-suggestion {
+    padding-bottom: 5%;
+    margin: auto;
+    align-self: center;
+}
+
+#bottom-newsletter-container {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row: 3;
+    padding: 5% 0px 5% 0px;
+    text-align: center;
+}
+
+#bottom-newsletter-container img {
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+}
+
+.carousel{
+  grid-column-start: 2;
+  grid-column-end:5;
+  grid-row: 3;
+
+
+}
+
+.carousel-control-prev {
+  margin-left: -70px;
+}
+
+.carousel-control-next{
+  margin-right: -70px;
+}
+
+.carousel-control-prev-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2331ADE0' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon{
+
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2331ADE0' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-item {
+  margin-top: 30px;
+  width: 100%;
+  height: 250px; /* example */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+}
+.errorMessage{
+font-size:0.8rem;
+}

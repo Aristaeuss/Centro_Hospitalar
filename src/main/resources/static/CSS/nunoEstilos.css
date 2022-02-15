@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  margin-top: 0;
+  background-image: url('/Images/backgroundBlue.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-left: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  min-width: 860px;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 5% auto 100px;
+}
+
+.register-flex{
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:  rgb(255, 255, 255);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+.heartLogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    width: 35%;
+    align-self: center;
+    justify-self: center;
+}
+
+.instructions {
+  color: #2C363E;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.field-input {
+    height: 30px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #DCDCDC;
+    margin: 4px;
+}
+
+.field-input:focus {
+    outline: none;
+    border-color: #31ADE0;
+    border-style: solid;
+}
+
+.field-input:hover {
+    outline: none;
+    border-color: #BCBCBC;
+    border-style: solid;
+    background-color: #FFFFFFB9;
+}
+
+
+.field-input::placeholder {
+    font-size: 16;
+    color: #7E7E7E;
+}
+
+.first-line-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.registerForm-wrapper .registerForm .name{
+     width: 50%;
+}
+
+.registerForm-wrapper .registerForm .preferredName{
+    width: 25%;
+}
+
+
+.registerForm-wrapper .registerForm .label-wrapper{
+    width: 25%;
+    color: #7E7E7E;
+}
+
+
+.label-wrapper input {
+    height: 18px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #DCDCDC;
+    margin: 4px;
+}
+
+.label-wrapper input:focus {
+    outline: none;
+    border-color: #31ADE0;
+    border-style: solid;
+}
+
+.label-wrapper input:hover {
+    outline: none;
+    border-color: #BCBCBC;
+    border-style: solid;
+    background-color: #FFFFFFB9;
+}
+
+.label-wrapper input::placeholder {
+    font-size: 16;
+    color: #7E7E7E;
+}
+
+.registerForm-wrapper .registerForm .dob-label{
+    font-size: 0.6rem;
+    color: #7E7E7E;
+    display:flex;
+    flex-direction:column;
+}
+
+.second-line-wrapper {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+
+.socialSecurity-wrapper {
+    width: 33%;
+    display:flex;
+    flex-direction:column;
+}
+
+.patientNumber-wrapper {
+    width: 33%;
+    display:flex;
+    flex-direction:column;
+}
+
+.nif-wrapper {
+    width: 33%;
+    display:flex;
+    flex-direction:column;
+}
+
+.third-line-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+
+.registerForm-wrapper .registerForm .telephone{
+    width: 30%;
+}
+
+.registerForm-wrapper .registerForm .address{
+    width: 70%;
+}
+
+.third-line-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.registerForm-wrapper .registerForm .doorNumber{
+    width: 10%;
+}
+
+.registerForm-wrapper .registerForm .floor{
+    width: 15%;
+}
+.registerForm-wrapper .registerForm .postalCode{
+    width: 20%;
+}
+
+.registerForm-wrapper .registerForm .city{
+    width: 35%;
+}
+
+.third-line-wrapper {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.email-wrapper {
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+}
+
+.sixth-line-wrapper {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.username-wrapper {
+    width: 35%;
+    display:flex;
+    flex-direction:column;
+}
+
+.registerForm-wrapper .registerForm .password {
+    margin-top: 0.9rem;
+    width:35%;
+}
+
+.confirmPassword-wrapper {
+    width: 35%;
+    display:flex;
+    flex-direction:column;
+}
+
+
+
+
+
+
+
+.register-flex #setPassword, #confirmPassword{
+    width: 91.5%;
+}
+
+.register-flex .tcText{
+    font-size: 11px;
+    color: #7E7E7E;
+    margin-left: 5px;
+    
+}
+.checkbox label {
+    display: inline-block;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+.checkbox input {
+    vertical-align: middle;
+}
+.checkbox label span {
+    vertical-align: middle;
+}
+
+
+.register-flex .submitButton{
+    margin-top: 3rem;
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    background-image: linear-gradient(to bottom, #98C33E, #005716);
+    border: none;
+    border-radius: 20px;
+    width: 98%;
+    padding: 5px 50px 5px 50px;
+}
+
+.register-flex .haveAccount{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+.register-flex .errorMessage{
+    font-size: 16px;
+    margin: 5px;
+}
+
+.register-flex .errorMessage a{
+    font-size: 16px;
+    text-decoration:none;
+    color:red;
+}
+
+
+.register-flex .haveAccount a{
+    color: #31ADE0;
+}
+
+/* About me textarea */
+
+.registerForm textarea {
+  width: 100%;
+  resize: none;
+}
